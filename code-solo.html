@@ -1,31 +1,70 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Code Solo</title>
     <!-- The code below imports bootstrap CSS - this does the styling. -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!-- The code below imports bootstrap JS - this adds interactivity. -->
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
-<!-- Follow the steps below to build out a quick webpage using boostrap documentation. -->
+    <!-- Follow the steps below to build out a quick webpage using boostrap documentation. -->
 
-<!-- 1. Go to getbootstrap.com -->
+    <!-- 1. Go to getbootstrap.com -->
 
-<!-- 2. In the search bar, type "navbar" and press enter. There are many to choose from,
+    <!-- 2. In the search bar, type "navbar" and press enter. There are many to choose from,
      but scroll and find the one that simply says "Nav" -->
 
-<!-- 3. Copy the HTML code and paste it below. Run your code - what do you see?  -->
+    <!-- 3. Copy the HTML code and paste it below. Run your code - what do you see?  -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 4. Auto-format your page to clean things up. -->
 
-<!-- 4. Auto-format your page to clean things up. -->
+    <!-- 5. Next, in the search bar, type "cards" and press enter. Copy the "Example" HTML and paste below. -->
+    <div class="card" style="width: 18rem;">
+        <img src="data:image/jpeg;base64,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"
+            class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Banana</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+                content.</p>
+            <a href="https://en.wikipedia.org/wiki/Banana" class="btn btn-primary">Banana-link</a>
+        </div>
+    </div>
+    <!-- 6. Find an image you like from a Google search - put this as the src for the img tag. -->
 
-<!-- 5. Next, in the search bar, type "cards" and press enter. Copy the "Example" HTML and paste below. -->
+    <!-- 7. Scroll through the side menu and see what else you can add - take a look at the options in the "Components" section.  -->
 
-<!-- 6. Find an image you like from a Google search - put this as the src for the img tag. -->
+    <!-- 8. Try out some new code and have fun! 😊 -->
 
-<!-- 7. Scroll through the side menu and see what else you can add - take a look at the options in the "Components" section.  -->
-
-<!-- 8. Try out some new code and have fun! 😊 -->
-    
 </body>
+
 </html>
